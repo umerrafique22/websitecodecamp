@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Background color set to white */
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            margin-bottom: 50px; /* Reduced margin for better alignment */
+        }
+
+        .right1, .right2 {
+            border: 1px solid grey;
+            padding: 8px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black; /* Matching Google's header color */
+        }
+
+        .right3 {
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            background-color: #f1f1f1;
+            border-radius: 40px;
+        }
+
+        .right3 img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 40px;
+        }
+
+        .container {
+            padding: 5px;
+            margin: 4px auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+        }
+
+        .text1 {
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .text1 img {
+            width: 100%; /* Ensures the image scales responsively */
+            height: 200px; /* Keeps the height fixed */
+            object-fit: contain; /* Ensures the image fits without being cropped */
+            filter: grayscale(100%); /* Applies the grayscale filter to the image */
+        }
+
+        .textfield {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .textfield input {
+            border-radius: 20px;
+            border: 2px solid grey;
+            padding: 11px;
+            width: 90%;
+            height: 20px;
+            font-size: 16px;
+        }
+
+        .container2 {
+            margin: 4px auto;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+        }
+
+        .btn1 {
+            background-color: rgb(80, 77, 77);
+            color: rgb(145, 141, 141);
+            width: 120px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+
+        .btn2 {
+            background-color: rgb(80, 77, 77);
+            height: 50px;
+            color: rgb(117, 117, 117);
+            width: 120px;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+
+        .btn2:hover {
+            color: darkgoldenrod;
+            background-color: rgb(118, 120, 117);
+            border: 2px solid rgb(59, 56, 56);
+        }
+
+        .btn1:hover {
+            color: darkgrey;
+            background-color: rgb(148, 151, 145);
+            border: 2px solid rgb(54, 53, 53);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="right1">Gmail</div>
+        <div class="right2">Images</div>
+        <div class="right3"><img src="img/images.png" alt="App Icon"></div>
+    </header>
+
+    <div class="container">
+        <div class="text1">
+            <img src="img/th (1).jpeg" alt="Logo">
+        </div>
+        <div class="textfield">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <div class="container2">
+        <button class="btn1">btn 1</button>
+        <button class="btn2">btn 2</button>
+    </div>
+</body>
+</html>
